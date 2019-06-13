@@ -1,0 +1,49 @@
+server:
+  port: 7777
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1/xunwu?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  mvc:
+    static-path-pattern: /static/**    # 加载图片 静态资源
+  resources:
+    static-locations: classpath:static/   # 加载图片 静态资源
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    content-type: text/html
+    cache: false
+    encoding: UTF-8
+
+   # multipart config  WebFileUploadConfig 上传
+  http:
+    multipart:
+      enabled: true
+      location: /Users/a645661167/idea-work/findhome/images
+      max-file-size: 5MB
+      max-request-size: 20MB
+ #email 注意替换成自己邮箱的配置
+  mail:
+    host: smtp.163.com
+    username: flyzfq@163.com
+    password: wali123
+
+# qiniu 注意替换成自己申请的配置
+qiniu.AccessKey: h587lgDLHoEENo7bYb6FfQJ_iUr15yE1eMG6RFQi
+qiniu.SecretKey: LYmxVmcaCX7x5ot9KARuqzgQuwQm2uwUqBTackzZ
+qiniu.Bucket: lvzheng
+qiniu.cdn.prefix: http://psyq8e7t2.bkt.clouddn.com/
+
+# 阿里云短信配置 注意替换自己申请的配置
+aliyun.sms.accessKey: LTAISjYxxr5qLmio
+aliyun.sms.accessKeySecret: pkqEMJIcVQV8G5fkNEQNDQV7rsntKV
+aliyun.sms.template.code: SMS_95590008
+
+
+
