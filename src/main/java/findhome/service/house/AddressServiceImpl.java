@@ -52,8 +52,8 @@ public class AddressServiceImpl implements IAddressService {
     @Autowired
     private SubwayStationRepository subwayStationRepository;
 
-
-    private ModelMapper modelMapper=new ModelMapper();
+    @Autowired
+    private ModelMapper modelMapper;
 
     @Autowired
     private ObjectMapper objectMapper;

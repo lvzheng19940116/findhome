@@ -1,7 +1,6 @@
-package findhome.service.impl;
+package findhome.service;
 
-import findhome.service.ISmsService;
-import findhome.service.ServiceResult;
+
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,16 +14,16 @@ import java.util.Random;
  */
 @Service
 public class SmsServiceImpl implements ISmsService, InitializingBean {
-//    @Value("${aliyun.sms.accessKey}")
-//    private String accessKey;
-//
-//    @Value("${aliyun.sms.accessKeySecret}")
-//    private String secertKey;
-//
-//    @Value("${aliyun.sms.template.code}")
-//    private String templateCode;
+    @Value("${aliyun.sms.accessKey}")
+    private String accessKey;
 
-//    private IAcsClient acsClient;
+    @Value("${aliyun.sms.accessKeySecret}")
+    private String secertKey;
+
+    @Value("${aliyun.sms.template.code}")
+    private String templateCode;
+
+    // private IAcsClient acsClient;
 
     private final static String SMS_CODE_CONTENT_PREFIX = "SMS::CODE::CONTENT";
 
@@ -71,26 +70,30 @@ public class SmsServiceImpl implements ISmsService, InitializingBean {
 //            redisTemplate.opsForValue().set(SMS_CODE_CONTENT_PREFIX + telephone, code, 10, TimeUnit.MINUTES);
 //            return ServiceResult.of(code);
 //        } else {
-            return new ServiceResult<String>(false, "服务忙，请稍后重试");
+//            return new ServiceResult<String>(false, "服务忙，请稍后重试");
 //        }
+
+        return new ServiceResult<String>(false, "服务忙，请稍后重试");
     }
 
     @Override
     public String getSmsCode(String telephone) {
-        return this.redisTemplate.opsForValue().get(SMS_CODE_CONTENT_PREFIX + telephone);
+        return "";
+        //this.redisTemplate.opsForValue().get(SMS_CODE_CONTENT_PREFIX + telephone);
     }
 
     @Override
     public void remove(String telephone) {
-        this.redisTemplate.delete(SMS_CODE_CONTENT_PREFIX + telephone);
+
+        //this.redisTemplate.delete(SMS_CODE_CONTENT_PREFIX + telephone);
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        // 设置超时时间
-        System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
-        System.setProperty("sun.net.client.defaultReadTimeout", "10000");
-
+//        // 设置超时时间
+//        System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
+//        System.setProperty("sun.net.client.defaultReadTimeout", "10000");
+//
 //        IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", accessKey, secertKey);
 //
 //        String product = "Dysmsapi";
@@ -103,6 +106,7 @@ public class SmsServiceImpl implements ISmsService, InitializingBean {
 
     /**
      * 6位验证码生成器
+     *
      * @return
      */
     private static String generateRandomSmsCode() {

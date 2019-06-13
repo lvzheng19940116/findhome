@@ -33,6 +33,31 @@ spring:
     host: smtp.163.com
     username: flyzfq@163.com
     password: wali123
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: xunwu
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
+         # 默认为elasticsearch
+      cluster-name: lvzheng
+      repositories:
+        enabled: true
+  rabbitmq:
+    password: guest
+    port: 5672
+    host: 127.0.0.1
+    username: guest
+
+elasticsearch.cluster.name: xunwu
+elasticsearch.host: 127.0.0.1
+elasticsearch.port: 9300
+#
+#spring.kafka.bootstrap-servers=127.0.0.1:9092
+#spring.kafka.consumer.group-id=xunwu
+
+
 
 # qiniu 注意替换成自己申请的配置
 qiniu.AccessKey: h587lgDLHoEENo7bYb6FfQJ_iUr15yE1eMG6RFQi

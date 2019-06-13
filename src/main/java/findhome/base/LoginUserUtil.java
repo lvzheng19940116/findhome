@@ -7,6 +7,9 @@ import java.util.regex.Pattern;
 
 /**
  * Created by 瓦力.
+ *
+ * 获取当前用户
+ * 验证手机号
  */
 public class LoginUserUtil {
     private static final String PHONE_REGEX = "^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$";

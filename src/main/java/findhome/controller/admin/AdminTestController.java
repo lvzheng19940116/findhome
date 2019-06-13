@@ -6,6 +6,8 @@ import com.qiniu.http.Response;
 import findhome.base.ApiResponse;
 import findhome.bean.SupportAddress;
 import findhome.service.ServiceResult;
+import findhome.service.house.IAddressService;
+import findhome.service.house.IHouseService;
 import findhome.service.house.IQiNiuService;
 import findhome.web.dto.HouseDTO;
 import findhome.web.dto.QiNiuPutRet;
@@ -52,6 +54,11 @@ public class AdminTestController {
     private IQiNiuService qiNiuService;
     @Autowired
     private Gson gson;
+    @Autowired
+    private IAddressService addressService;
+
+    @Autowired
+    private IHouseService houseService;
 
     @GetMapping("admin/center")
     public String center(ModelMap map) {
@@ -79,15 +86,7 @@ public class AdminTestController {
         return "user/center";
     }
 
-    /**
-     * 新增房源功能页
-     *
-     * @return
-     */
-    @GetMapping("admin/add/house")
-    public String addHousePage() {
-        return "admin/house-add";
-    }
+
 
     @PostMapping(value = "admin/upload/photo", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @ResponseBody
@@ -138,7 +137,15 @@ public class AdminTestController {
 //        }
 //        return ApiResponse.ofSuccess(null);
     }
-
+    /**
+     * 新增房源功能页
+     *
+     * @return
+     */
+    @GetMapping("admin/add/house")
+    public String addHousePage() {
+        return "admin/house-add";
+    }
 
     /**
      * 新增房源接口
@@ -158,15 +165,15 @@ public class AdminTestController {
             return ApiResponse.ofMessage(HttpStatus.BAD_REQUEST.value(), "必须上传图片");
         }
 
-//        Map<SupportAddress.Level, SupportAddressDTO> addressMap = addressService.findCityAndRegion(houseForm.getCityEnName(), houseForm.getRegionEnName());
-//        if (addressMap.keySet().size() != 2) {
-//            return ApiResponse.ofStatus(ApiResponse.Status.NOT_VALID_PARAM);
-//        }
-//
-//        ServiceResult<HouseDTO> result = houseService.save(houseForm);
-//        if (result.isSuccess()) {
-//            return ApiResponse.ofSuccess(result.getResult());
-//        }
+        Map<SupportAddress.Level, SupportAddressDTO> addressMap = addressService.findCityAndRegion(houseForm.getCityEnName(), houseForm.getRegionEnName());
+        if (addressMap.keySet().size() != 2) {
+            return ApiResponse.ofStatus(ApiResponse.Status.NOT_VALID_PARAM);
+        }
+
+        ServiceResult<HouseDTO> result = houseService.save(houseForm);
+        if (result.isSuccess()) {
+            return ApiResponse.ofSuccess(result.getResult());
+        }
 
         return ApiResponse.ofSuccess(ApiResponse.Status.NOT_VALID_PARAM);
     }
