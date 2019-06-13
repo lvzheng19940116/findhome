@@ -1,0 +1,60 @@
+16:25:24.525 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:32:59.662 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:36:04.865 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:36:26.438 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+

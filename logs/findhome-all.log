@@ -1,0 +1,305 @@
+16:25:15.510 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 83504 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+16:25:15.514 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+16:25:15.786 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:25:15.905 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66d18979: startup date [Thu Jun 13 16:25:15 CST 2019]; root of context hierarchy
+16:25:17.013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:25:17.216 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:25:17.296 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+16:25:17.299 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+16:25:17.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+16:25:17.305 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+16:25:17.305 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+16:25:17.306 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+16:25:17.306 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+16:25:17.308 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+16:25:17.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+16:25:17.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+16:25:18.377 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+16:25:18.387 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+16:25:18.388 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:25:18.491 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+16:25:18.491 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2586 ms
+16:25:18.902 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:25:18.903 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:25:18.903 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:25:18.903 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:25:18.904 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+16:25:18.905 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:25:19.623 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:25:19.664 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:25:19.874 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:25:19.876 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+16:25:19.877 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+16:25:20.039 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:25:20.752 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:25:22.586 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:25:23.989 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:25:24.420 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'modelMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16:25:24.421 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:25:24.426 [main] INFO  o.a.c.c.StandardService - Stopping service [Tomcat]
+16:25:24.439 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+16:25:24.525 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:32:54.339 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 85133 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+16:32:54.342 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+16:32:54.554 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:32:54.627 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66d18979: startup date [Thu Jun 13 16:32:54 CST 2019]; root of context hierarchy
+16:32:55.544 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:32:55.643 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:32:55.676 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+16:32:55.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+16:32:55.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+16:32:55.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+16:32:55.677 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+16:32:55.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+16:32:55.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+16:32:55.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+16:32:55.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+16:32:55.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+16:32:56.663 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+16:32:56.676 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+16:32:56.677 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:32:56.762 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+16:32:56.762 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2135 ms
+16:32:57.020 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:32:57.021 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:32:57.021 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:32:57.021 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:32:57.022 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+16:32:57.022 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:32:57.614 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:32:57.631 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:32:57.722 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:32:57.724 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+16:32:57.726 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+16:32:57.783 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:32:58.123 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:32:58.673 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:32:59.024 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:32:59.565 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'modelMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16:32:59.567 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:32:59.572 [main] INFO  o.a.c.c.StandardService - Stopping service [Tomcat]
+16:32:59.581 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+16:32:59.662 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:35:59.409 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 85785 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+16:35:59.426 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+16:35:59.581 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:35:59.731 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66d18979: startup date [Thu Jun 13 16:35:59 CST 2019]; root of context hierarchy
+16:36:00.705 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:36:00.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:36:00.834 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+16:36:00.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+16:36:00.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+16:36:00.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+16:36:00.836 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+16:36:00.836 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+16:36:00.837 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+16:36:00.837 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+16:36:00.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+16:36:00.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+16:36:01.822 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+16:36:01.833 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+16:36:01.834 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:36:01.939 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+16:36:01.940 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2209 ms
+16:36:02.157 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:36:02.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:36:02.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:36:02.158 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:36:02.159 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+16:36:02.159 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:36:02.759 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:36:02.780 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:36:02.890 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:36:02.891 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+16:36:02.893 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+16:36:02.945 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:36:03.283 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:36:03.834 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:36:04.213 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:36:04.768 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'modelMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16:36:04.769 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:36:04.774 [main] INFO  o.a.c.c.StandardService - Stopping service [Tomcat]
+16:36:04.784 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+16:36:04.865 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:36:21.621 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 85874 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+16:36:21.627 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+16:36:21.894 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:36:22.261 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66d18979: startup date [Thu Jun 13 16:36:22 CST 2019]; root of context hierarchy
+16:36:23.319 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:36:23.433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:36:23.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+16:36:23.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+16:36:23.463 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+16:36:23.464 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+16:36:23.464 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+16:36:23.464 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+16:36:23.465 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+16:36:23.465 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+16:36:23.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+16:36:23.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+16:36:24.309 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+16:36:24.317 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+16:36:24.318 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:36:24.426 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+16:36:24.426 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2177 ms
+16:36:24.621 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:36:24.622 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:36:24.622 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:36:24.622 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:36:24.623 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+16:36:24.623 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:36:25.066 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:36:25.075 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:36:25.113 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:36:25.114 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+16:36:25.114 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+16:36:25.138 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:36:25.409 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:36:25.719 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:36:25.980 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:36:26.368 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'modelMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16:36:26.369 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:36:26.373 [main] INFO  o.a.c.c.StandardService - Stopping service [Tomcat]
+16:36:26.385 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+16:36:26.438 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field modelMapper in findhome.service.house.AddressServiceImpl required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+16:36:59.515 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 86009 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+16:36:59.517 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+16:36:59.710 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:36:59.810 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f7cd29: startup date [Thu Jun 13 16:36:59 CST 2019]; root of context hierarchy
+16:37:00.416 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:37:00.483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:37:00.504 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+16:37:00.504 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+16:37:00.504 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+16:37:00.504 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+16:37:00.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+16:37:00.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+16:37:00.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+16:37:00.505 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+16:37:00.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+16:37:00.506 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+16:37:01.131 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+16:37:01.138 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+16:37:01.139 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+16:37:01.203 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+16:37:01.204 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1394 ms
+16:37:01.337 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:37:01.338 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:37:01.338 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:37:01.338 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:37:01.339 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+16:37:01.339 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:37:01.775 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:37:01.783 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:37:01.821 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:37:01.822 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+16:37:01.823 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+16:37:01.846 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:37:02.076 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:37:02.400 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:37:02.626 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:37:03.278 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fe87c0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@139089a4, org.springframework.security.web.header.HeaderWriterFilter@18bb1b88, org.springframework.security.web.authentication.logout.LogoutFilter@34e990cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@517a46f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ff4b223, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4aac81ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8f4b803, org.springframework.security.web.session.SessionManagementFilter@362a6aa5, org.springframework.security.web.access.ExceptionTranslationFilter@18dac12f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c2883b1]
+16:37:03.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f7cd29: startup date [Thu Jun 13 16:36:59 CST 2019]; root of context hierarchy
+16:37:03.521 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+16:37:03.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+16:37:03.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+16:37:03.524 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+16:37:03.524 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+16:37:03.529 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminTestController.center(org.springframework.ui.ModelMap)
+16:37:03.530 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminTestController.login()
+16:37:03.530 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminTestController.houseListPage()
+16:37:03.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminTestController.addHousePage()
+16:37:03.531 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminTestController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+16:37:03.532 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminTestController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+16:37:03.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminTestController.welcome()
+16:37:03.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+16:37:03.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+16:37:03.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:37:03.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:37:03.563 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:37:03.563 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:37:03.604 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:37:03.638 [main] WARN  o.t.t.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+16:37:04.204 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:37:04.222 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+16:37:04.229 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+16:37:04.254 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+16:37:04.268 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+16:37:04.272 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 5.18 seconds (JVM running for 5.88)
+16:37:09.648 [Thread-16] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17f7cd29: startup date [Thu Jun 13 16:36:59 CST 2019]; root of context hierarchy
+16:37:09.652 [Thread-16] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:37:09.656 [Thread-16] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

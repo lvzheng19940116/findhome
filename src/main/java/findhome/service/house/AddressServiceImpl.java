@@ -2,7 +2,6 @@ package findhome.service.house;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import findhome.bean.Subway;
 import findhome.bean.SubwayStation;
 import findhome.bean.SupportAddress;
@@ -53,8 +52,8 @@ public class AddressServiceImpl implements IAddressService {
     @Autowired
     private SubwayStationRepository subwayStationRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
+
+    private ModelMapper modelMapper=new ModelMapper();
 
     @Autowired
     private ObjectMapper objectMapper;
