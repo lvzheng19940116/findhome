@@ -75,6 +75,15 @@ public class AdminTestController {
     public String login() {
         return "/admin/login";
     }
+    /**
+     * 新增房源功能页
+     *
+     * @return
+     */
+    @GetMapping("admin/add/house")
+    public String addHousePage() {
+        return "admin/house-add";
+    }
 
     /**
      * 房源列表页
@@ -85,6 +94,7 @@ public class AdminTestController {
     public String houseListPage() {
         return "user/center";
     }
+
 
 
 
@@ -137,15 +147,7 @@ public class AdminTestController {
 //        }
 //        return ApiResponse.ofSuccess(null);
     }
-    /**
-     * 新增房源功能页
-     *
-     * @return
-     */
-    @GetMapping("admin/add/house")
-    public String addHousePage() {
-        return "admin/house-add";
-    }
+
 
     /**
      * 新增房源接口

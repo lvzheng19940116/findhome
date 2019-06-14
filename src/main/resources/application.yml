@@ -49,6 +49,14 @@ spring:
     port: 5672
     host: 127.0.0.1
     username: guest
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      min-idle: 1
+    timeout: 5000
+  session:
+    store-type: redis
 
 elasticsearch.cluster.name: xunwu
 elasticsearch.host: 127.0.0.1
