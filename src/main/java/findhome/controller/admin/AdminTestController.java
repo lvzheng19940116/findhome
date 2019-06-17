@@ -3,8 +3,10 @@ package findhome.controller.admin;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import com.qiniu.http.Response;
+import findhome.base.ApiDataTableResponse;
 import findhome.base.ApiResponse;
 import findhome.bean.SupportAddress;
+import findhome.service.ServiceMultiResult;
 import findhome.service.ServiceResult;
 import findhome.service.house.IAddressService;
 import findhome.service.house.IHouseService;
@@ -12,6 +14,7 @@ import findhome.service.house.IQiNiuService;
 import findhome.web.dto.HouseDTO;
 import findhome.web.dto.QiNiuPutRet;
 import findhome.web.dto.SupportAddressDTO;
+import findhome.web.form.DatatableSearch;
 import findhome.web.form.HouseForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -75,6 +78,32 @@ public class AdminTestController {
     public String login() {
         return "/admin/login";
     }
+
+
+    /**
+     * 房源列表页
+     *
+     * @return
+     */
+    @GetMapping("admin/house/list")
+    public String houseListPage() {
+        return "admin/house-list";
+    }
+
+    @PostMapping("admin/houses")
+    @ResponseBody
+    public ApiDataTableResponse houses(@ModelAttribute DatatableSearch searchBody) {
+        ServiceMultiResult<HouseDTO> result = houseService.adminQuery(searchBody);
+
+        ApiDataTableResponse response = new ApiDataTableResponse(ApiResponse.Status.SUCCESS);
+        response.setData(result.getResult());
+        response.setRecordsFiltered(result.getTotal());
+        response.setRecordsTotal(result.getTotal());
+        response.setDraw(searchBody.getDraw());
+        return response;
+    }
+
+
     /**
      * 新增房源功能页
      *
@@ -84,19 +113,6 @@ public class AdminTestController {
     public String addHousePage() {
         return "admin/house-add";
     }
-
-    /**
-     * 房源列表页
-     *
-     * @return
-     */
-    @GetMapping("/house/list")
-    public String houseListPage() {
-        return "user/center";
-    }
-
-
-
 
     @PostMapping(value = "admin/upload/photo", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @ResponseBody
