@@ -2,26 +2,24 @@ package findhome.controller.house;
 
 import findhome.base.ApiResponse;
 import findhome.base.RentValueBlock;
+import findhome.bean.SupportAddress;
+import findhome.service.IUserService;
 import findhome.service.ServiceMultiResult;
 import findhome.service.ServiceResult;
 import findhome.service.house.IAddressService;
 import findhome.service.house.IHouseService;
-import findhome.web.dto.HouseDTO;
-import findhome.web.dto.SubwayDTO;
-import findhome.web.dto.SubwayStationDTO;
-import findhome.web.dto.SupportAddressDTO;
+import findhome.service.search.ISearchService;
+import findhome.web.dto.*;
 import findhome.web.form.RentSearch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 瓦力.
@@ -33,6 +31,11 @@ public class HouseController {
     @Autowired
     private IHouseService houseService;
 
+    @Autowired
+    private IUserService userService;
+
+    @Autowired
+    private ISearchService searchService;
     /**
      * 获取支持城市列表
      *
@@ -147,5 +150,43 @@ public class HouseController {
         model.addAttribute("currentAreaBlock", RentValueBlock.matchArea(rentSearch.getAreaBlock()));
 
         return "rent-list";
+    }
+
+    /**
+     * 房源详细
+     * @param houseId
+     * @param model
+     * @return
+     */
+    @GetMapping("rent/house/show/{id}")
+    public String show(@PathVariable(value = "id") Long houseId,
+                       Model model) {
+        if (houseId <= 0) {
+            return "404";
+        }
+
+        ServiceResult<HouseDTO> serviceResult = houseService.findCompleteOne(houseId);
+        if (!serviceResult.isSuccess()) {
+            return "404";
+        }
+
+        HouseDTO houseDTO = serviceResult.getResult();
+        Map<SupportAddress.Level, SupportAddressDTO>
+                addressMap = addressService.findCityAndRegion(houseDTO.getCityEnName(), houseDTO.getRegionEnName());
+
+        SupportAddressDTO city = addressMap.get(SupportAddress.Level.CITY);
+        SupportAddressDTO region = addressMap.get(SupportAddress.Level.REGION);
+
+        model.addAttribute("city", city);
+        model.addAttribute("region", region);
+
+        ServiceResult<UserDTO> userDTOServiceResult = userService.findById(houseDTO.getAdminId());
+        model.addAttribute("agent", userDTOServiceResult.getResult());
+        model.addAttribute("house", houseDTO);
+
+      //  ServiceResult<Long> aggResult = searchService.aggregateDistrictHouse(city.getEnName(), region.getEnName(), houseDTO.getDistrict());
+        model.addAttribute("houseCountInDistrict", 0/*aggResult.getResult()*/);
+
+        return "house-detail";
     }
 }
