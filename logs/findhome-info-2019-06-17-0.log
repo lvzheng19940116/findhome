@@ -1,0 +1,1270 @@
+18:51:36.509 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 69711 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+18:51:36.536 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+18:51:36.767 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+18:51:36.813 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c1bd0be: startup date [Mon Jun 17 18:51:36 CST 2019]; root of context hierarchy
+18:51:38.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:51:38.513 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:51:38.691 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+18:51:38.692 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+18:51:38.693 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+18:51:38.693 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+18:51:38.694 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+18:51:38.696 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+18:51:38.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+18:51:38.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+18:51:38.699 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+18:51:38.700 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+18:51:39.460 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$af5ad16c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:51:39.493 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$bca124c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:51:40.394 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+18:51:40.408 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+18:51:40.409 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+18:51:40.525 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+18:51:40.526 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 3713 ms
+18:51:40.983 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:51:40.983 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+18:51:40.983 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:51:40.984 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:51:40.984 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:51:40.985 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+18:51:40.985 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:51:41.960 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+18:51:41.986 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:51:42.147 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+18:51:42.149 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:51:42.150 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+18:51:42.241 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:51:42.516 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:51:43.224 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:51:43.748 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:51:47.442 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:51:47.448 [main] INFO  o.a.c.c.StandardService - Stopping service [Tomcat]
+18:51:47.462 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+18:54:56.606 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 70420 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+18:54:56.631 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+18:54:56.859 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+18:54:56.949 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4351c8c3: startup date [Mon Jun 17 18:54:56 CST 2019]; root of context hierarchy
+18:54:58.020 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:54:58.117 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:54:58.175 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+18:54:58.176 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+18:54:58.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+18:54:58.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+18:54:58.178 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+18:54:58.180 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+18:54:58.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+18:54:58.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+18:54:58.182 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+18:54:58.182 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+18:54:58.674 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ecef3a79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:54:58.702 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fa358dce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:54:59.593 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+18:54:59.607 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+18:54:59.609 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+18:54:59.766 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+18:54:59.767 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2818 ms
+18:55:00.259 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:55:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+18:55:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:55:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:55:00.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:55:00.261 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+18:55:00.261 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:55:01.102 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+18:55:01.137 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:55:01.297 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+18:55:01.300 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:55:01.302 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+18:55:01.406 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+18:55:01.704 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:55:02.355 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:55:02.816 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:55:06.186 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f3abe67, org.springframework.security.web.context.SecurityContextPersistenceFilter@27f43664, org.springframework.security.web.header.HeaderWriterFilter@47d7e8b5, org.springframework.security.web.authentication.logout.LogoutFilter@3502b614, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56c39949, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f154d9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c0989f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64f1e9f8, org.springframework.security.web.session.SessionManagementFilter@661d49d1, org.springframework.security.web.access.ExceptionTranslationFilter@19487d13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@365c8a47]
+18:55:06.378 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4351c8c3: startup date [Mon Jun 17 18:54:56 CST 2019]; root of context hierarchy
+18:55:06.505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+18:55:06.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+18:55:06.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+18:55:06.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+18:55:06.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+18:55:06.510 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+18:55:06.510 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+18:55:06.510 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+18:55:06.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+18:55:06.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+18:55:06.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+18:55:06.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+18:55:06.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+18:55:06.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+18:55:06.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+18:55:06.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+18:55:06.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+18:55:06.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+18:55:06.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+18:55:06.519 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+18:55:06.520 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+18:55:06.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:55:06.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:55:06.590 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:55:06.590 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:55:06.653 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:55:08.106 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:55:08.120 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18:55:08.123 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18:55:08.187 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+18:55:08.210 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+18:55:08.218 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+18:55:08.263 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+18:55:08.264 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+18:55:08.269 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+18:55:08.281 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:55:08.293 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+18:55:08.303 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+18:55:08.310 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+18:55:08.333 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+18:55:08.348 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 12.446 seconds (JVM running for 14.491)
+18:55:17.983 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:55:17.984 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:55:18.014 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+18:56:07.765 [Thread-32] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4351c8c3: startup date [Mon Jun 17 18:54:56 CST 2019]; root of context hierarchy
+18:56:07.774 [Thread-32] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+18:56:07.777 [Thread-32] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+18:56:07.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+18:56:07.793 [Thread-32] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:56:07.794 [Thread-32] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+18:56:07.806 [Thread-32] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:09:50.527 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 73566 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+19:09:50.530 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+19:09:50.824 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@625abb97: startup date [Mon Jun 17 19:09:50 CST 2019]; root of context hierarchy
+19:09:50.853 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+19:09:51.964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:09:52.100 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:09:52.161 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+19:09:52.161 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+19:09:52.162 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+19:09:52.163 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+19:09:52.176 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+19:09:52.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+19:09:52.180 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+19:09:52.180 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+19:09:52.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+19:09:52.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+19:09:52.679 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$533eb34c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:09:52.711 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$608506a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:09:53.481 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+19:09:53.501 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+19:09:53.504 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+19:09:53.693 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+19:09:53.693 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2869 ms
+19:09:54.256 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:09:54.256 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+19:09:54.257 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:09:54.257 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:09:54.257 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:09:54.258 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+19:09:54.258 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+19:09:55.085 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:09:55.102 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:09:55.219 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+19:09:55.220 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+19:09:55.222 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+19:09:55.293 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:09:55.500 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:09:56.270 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:09:56.738 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+19:10:00.571 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bbb351e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6db84cae, org.springframework.security.web.header.HeaderWriterFilter@34d6e9a4, org.springframework.security.web.authentication.logout.LogoutFilter@395854dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@318ca53a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32aa27a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54dc163a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f80b25a, org.springframework.security.web.session.SessionManagementFilter@4822fc53, org.springframework.security.web.access.ExceptionTranslationFilter@5e08ed28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f588bc6]
+19:10:00.843 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@625abb97: startup date [Mon Jun 17 19:09:50 CST 2019]; root of context hierarchy
+19:10:01.033 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+19:10:01.034 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+19:10:01.037 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+19:10:01.037 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+19:10:01.038 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+19:10:01.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+19:10:01.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+19:10:01.044 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+19:10:01.045 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+19:10:01.045 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+19:10:01.045 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+19:10:01.047 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+19:10:01.047 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:10:01.048 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+19:10:01.048 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:10:01.049 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+19:10:01.050 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+19:10:01.050 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+19:10:01.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+19:10:01.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+19:10:01.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+19:10:01.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:10:01.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:10:01.147 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:01.147 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:01.230 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:10:03.006 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:10:03.020 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+19:10:03.025 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+19:10:03.076 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+19:10:03.097 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:10:03.106 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:10:03.154 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+19:10:03.154 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+19:10:03.159 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+19:10:03.177 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+19:10:03.194 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+19:10:03.210 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+19:10:03.223 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+19:10:03.254 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+19:10:03.261 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 13.329 seconds (JVM running for 15.218)
+19:10:26.145 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:10:26.146 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+19:10:26.173 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+19:18:43.785 [Thread-34] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@625abb97: startup date [Mon Jun 17 19:09:50 CST 2019]; root of context hierarchy
+19:18:43.812 [Thread-34] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+19:18:43.819 [Thread-34] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+19:18:43.837 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+19:18:43.841 [Thread-34] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+19:18:43.842 [Thread-34] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+19:18:43.863 [Thread-34] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:18:50.726 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 75466 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+19:18:50.790 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+19:18:50.967 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+19:18:51.152 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c1bd0be: startup date [Mon Jun 17 19:18:51 CST 2019]; root of context hierarchy
+19:18:51.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:18:52.035 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:18:52.062 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+19:18:52.062 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+19:18:52.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+19:18:52.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+19:18:52.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+19:18:52.063 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+19:18:52.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+19:18:52.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+19:18:52.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+19:18:52.064 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+19:18:52.447 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$89b8e485] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:18:52.471 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$96ff37da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:18:52.920 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+19:18:52.929 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+19:18:52.929 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+19:18:53.068 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+19:18:53.068 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1916 ms
+19:18:53.455 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:18:53.456 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+19:18:53.456 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:18:53.456 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:18:53.456 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:18:53.458 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+19:18:53.458 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+19:18:54.076 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:18:54.087 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:18:54.136 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+19:18:54.138 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+19:18:54.139 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+19:18:54.171 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:18:54.308 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:18:54.702 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:18:55.151 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+19:18:57.641 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a0d47e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e7fc012, org.springframework.security.web.header.HeaderWriterFilter@6c7bc8ac, org.springframework.security.web.authentication.logout.LogoutFilter@5205b3e2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@708f238f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@445d4517, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57d1edf0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@480d3c40, org.springframework.security.web.session.SessionManagementFilter@5d7f4cbb, org.springframework.security.web.access.ExceptionTranslationFilter@63437af4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3502b614]
+19:18:57.870 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c1bd0be: startup date [Mon Jun 17 19:18:51 CST 2019]; root of context hierarchy
+19:18:57.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+19:18:57.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+19:18:57.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+19:18:57.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+19:18:57.966 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+19:18:57.970 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+19:18:57.970 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:18:57.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+19:18:57.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+19:18:57.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+19:18:57.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+19:18:57.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+19:18:57.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+19:18:57.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+19:18:57.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:18:57.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/photo],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHousePhoto(java.lang.Long)
+19:18:57.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/cover],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.updateCover(java.lang.Long,java.lang.Long)
+19:18:57.973 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouseTag(java.lang.Long,java.lang.String)
+19:18:57.973 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHouseTag(java.lang.Long,java.lang.String)
+19:18:57.973 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+19:18:57.974 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+19:18:57.974 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+19:18:57.974 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+19:18:57.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+19:18:57.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+19:18:57.979 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:18:57.980 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:18:58.039 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:18:58.039 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:18:58.096 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:18:59.163 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:18:59.191 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+19:18:59.196 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+19:18:59.237 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+19:18:59.251 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:18:59.257 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:18:59.288 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+19:18:59.289 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+19:18:59.294 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+19:18:59.311 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+19:18:59.324 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+19:18:59.336 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+19:18:59.344 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+19:18:59.368 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+19:18:59.378 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 9.843 seconds (JVM running for 11.356)
+19:19:04.170 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:19:04.172 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+19:19:04.195 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+19:25:20.854 [Thread-26] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c1bd0be: startup date [Mon Jun 17 19:18:51 CST 2019]; root of context hierarchy
+19:25:20.866 [Thread-26] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+19:25:20.869 [Thread-26] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+19:25:20.877 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+19:25:20.879 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+19:25:20.880 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+19:25:20.893 [Thread-26] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:32:51.360 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 78437 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+19:32:51.363 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+19:32:51.551 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+19:32:51.654 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31aa3ca5: startup date [Mon Jun 17 19:32:51 CST 2019]; root of context hierarchy
+19:32:52.662 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:32:52.773 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:32:52.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+19:32:52.824 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+19:32:52.825 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+19:32:52.825 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+19:32:52.825 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+19:32:52.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+19:32:52.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+19:32:52.826 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+19:32:52.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+19:32:52.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+19:32:53.271 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4bbc9c79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:32:53.299 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5902efce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:32:54.050 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+19:32:54.064 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+19:32:54.066 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+19:32:54.167 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+19:32:54.167 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2513 ms
+19:32:54.625 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:32:54.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+19:32:54.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:32:54.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:32:54.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:32:54.627 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+19:32:54.627 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+19:32:55.372 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:32:55.401 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:32:55.522 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+19:32:55.524 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+19:32:55.526 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+19:32:55.582 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:32:55.768 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:32:56.291 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:32:56.691 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+19:32:59.945 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28592982, org.springframework.security.web.context.SecurityContextPersistenceFilter@46f3d0f7, org.springframework.security.web.header.HeaderWriterFilter@48900d4a, org.springframework.security.web.authentication.logout.LogoutFilter@6e6ec9c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ec921f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@354baab2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ef570be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@caee26e, org.springframework.security.web.session.SessionManagementFilter@452ea8f0, org.springframework.security.web.access.ExceptionTranslationFilter@64455184, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ac2b4c6]
+19:33:00.133 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31aa3ca5: startup date [Mon Jun 17 19:32:51 CST 2019]; root of context hierarchy
+19:33:00.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+19:33:00.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+19:33:00.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+19:33:00.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+19:33:00.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+19:33:00.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user/{userId}],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.getUserInfo(java.lang.Long)
+19:33:00.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+19:33:00.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+19:33:00.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:33:00.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+19:33:00.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:33:00.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/photo],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHousePhoto(java.lang.Long)
+19:33:00.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/cover],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.updateCover(java.lang.Long,java.lang.Long)
+19:33:00.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouseTag(java.lang.Long,java.lang.String)
+19:33:00.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHouseTag(java.lang.Long,java.lang.String)
+19:33:00.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/operate/{id}/{operation}],methods=[PUT]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.operateHouse(java.lang.Long,int)
+19:33:00.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseSubscribe()
+19:33:00.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe/list],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.subscribeList(int,int,int)
+19:33:00.237 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/finish/subscribe],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.finishSubscribe(java.lang.Long)
+19:33:00.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+19:33:00.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+19:33:00.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+19:33:00.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+19:33:00.241 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+19:33:00.241 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+19:33:00.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:33:00.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:33:00.305 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:33:00.305 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:33:00.368 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:33:01.505 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:33:01.514 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+19:33:01.518 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+19:33:01.565 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+19:33:01.587 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:33:01.596 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:33:01.648 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+19:33:01.648 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+19:33:01.654 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+19:33:01.668 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+19:33:01.680 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+19:33:01.691 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+19:33:01.697 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+19:33:01.719 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+19:33:01.725 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 11.022 seconds (JVM running for 12.307)
+19:33:43.295 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:33:43.295 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+19:33:43.322 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+19:37:15.723 [Thread-27] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31aa3ca5: startup date [Mon Jun 17 19:32:51 CST 2019]; root of context hierarchy
+19:37:15.728 [Thread-27] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+19:37:15.730 [Thread-27] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+19:37:15.737 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+19:37:15.739 [Thread-27] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+19:37:15.739 [Thread-27] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+19:37:15.750 [Thread-27] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:55:13.024 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 83172 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+19:55:13.031 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+19:55:13.226 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+19:55:13.400 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@758a34ce: startup date [Mon Jun 17 19:55:13 CST 2019]; root of context hierarchy
+19:55:14.446 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:55:14.558 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:55:14.628 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+19:55:14.629 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+19:55:14.630 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+19:55:14.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+19:55:14.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+19:55:14.633 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+19:55:14.633 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+19:55:14.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+19:55:14.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+19:55:14.635 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+19:55:15.098 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3c644f02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:55:15.128 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$49aaa257] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:55:15.782 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+19:55:15.790 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+19:55:15.793 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+19:55:15.888 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+19:55:15.888 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2488 ms
+19:55:16.293 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:55:16.293 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+19:55:16.294 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:55:16.294 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:55:16.294 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:55:16.295 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+19:55:16.295 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+19:55:17.060 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:55:17.076 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:55:17.191 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+19:55:17.193 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+19:55:17.195 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+19:55:17.258 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:55:17.491 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:55:18.136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:55:18.542 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+19:55:21.289 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d00241b, org.springframework.security.web.context.SecurityContextPersistenceFilter@10cf3e4f, org.springframework.security.web.header.HeaderWriterFilter@df0b348, org.springframework.security.web.authentication.logout.LogoutFilter@4ab959e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31e1c7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@242a3997, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a642c54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@365fde74, org.springframework.security.web.session.SessionManagementFilter@72dc7f0a, org.springframework.security.web.access.ExceptionTranslationFilter@2052c49f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7018636a]
+19:55:21.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@758a34ce: startup date [Mon Jun 17 19:55:13 CST 2019]; root of context hierarchy
+19:55:21.546 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+19:55:21.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.error()
+19:55:21.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.permission()
+19:55:21.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.not()
+19:55:21.547 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.ThymeleafController.logout()
+19:55:21.552 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user/{userId}],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.getUserInfo(java.lang.Long)
+19:55:21.552 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+19:55:21.552 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:55:21.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+19:55:21.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+19:55:21.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+19:55:21.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+19:55:21.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/photo],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHousePhoto(java.lang.Long)
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/cover],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.updateCover(java.lang.Long,java.lang.Long)
+19:55:21.554 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouseTag(java.lang.Long,java.lang.String)
+19:55:21.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHouseTag(java.lang.Long,java.lang.String)
+19:55:21.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/operate/{id}/{operation}],methods=[PUT]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.operateHouse(java.lang.Long,int)
+19:55:21.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseSubscribe()
+19:55:21.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe/list],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.subscribeList(int,int,int)
+19:55:21.555 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/finish/subscribe],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.finishSubscribe(java.lang.Long)
+19:55:21.559 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+19:55:21.559 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+19:55:21.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+19:55:21.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+19:55:21.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rent/house],methods=[GET]}" onto public java.lang.String findhome.controller.house.HouseController.rentHousePage(findhome.web.form.RentSearch,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19:55:21.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+19:55:21.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+19:55:21.562 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:55:21.563 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:55:21.623 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:55:21.623 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:55:21.683 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:55:23.558 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:55:23.578 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+19:55:23.582 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+19:55:23.632 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+19:55:23.654 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:55:23.663 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:55:23.715 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+19:55:23.715 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+19:55:23.721 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+19:55:23.745 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+19:55:23.761 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+19:55:23.771 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+19:55:23.779 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+19:55:23.804 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+19:55:23.812 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 11.698 seconds (JVM running for 13.679)
+19:57:50.462 [Thread-31] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@758a34ce: startup date [Mon Jun 17 19:55:13 CST 2019]; root of context hierarchy
+19:57:50.488 [Thread-31] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+19:57:50.495 [Thread-31] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+19:57:50.507 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer$ListenerConsumer - Consumer stopped
+19:57:50.510 [Thread-31] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+19:57:50.511 [Thread-31] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+19:57:50.532 [Thread-31] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:57:55.646 [main] INFO  f.FindhomeApplication - Starting FindhomeApplication on lvzhengdeMacBook-Pro.local with PID 83763 (/Users/a645661167/git/findhome/target/classes started by a645661167 in /Users/a645661167/git/findhome)
+19:57:55.651 [main] INFO  f.FindhomeApplication - No active profile set, falling back to default profiles: default
+19:57:55.814 [background-preinit] INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 5.3.5.Final
+19:57:55.982 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@616fe72b: startup date [Mon Jun 17 19:57:55 CST 2019]; root of context hierarchy
+19:57:56.748 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:57:56.843 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+19:57:56.903 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SupportAddressRepository.
+19:57:56.904 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.RoleRepository.
+19:57:56.904 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayStationRepository.
+19:57:56.905 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseDetailRepository.
+19:57:56.905 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseRepository.
+19:57:56.906 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HousePictureRepository.
+19:57:56.906 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.SubwayRepository.
+19:57:56.906 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.UserRepository.
+19:57:56.908 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseSubscribeRespository.
+19:57:56.909 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface findhome.repository.HouseTagRepository.
+19:57:57.297 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$52720457] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:57:57.331 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5fb857ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:57:57.774 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+19:57:57.783 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+19:57:57.783 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+19:57:57.861 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+19:57:57.861 [localhost-startStop-1] INFO  o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 1879 ms
+19:57:58.323 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+19:57:58.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+19:57:58.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+19:57:58.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+19:57:58.324 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+19:57:58.325 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+19:57:58.325 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+19:57:59.126 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+19:57:59.139 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:57:59.190 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.0.12.Final}
+19:57:59.192 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+19:57:59.193 [main] INFO  o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+19:57:59.229 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:57:59.352 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:57:59.756 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:58:00.111 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+19:58:03.431 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18d8da77, org.springframework.security.web.context.SecurityContextPersistenceFilter@457dc809, org.springframework.security.web.header.HeaderWriterFilter@6b9b9cb9, org.springframework.security.web.authentication.logout.LogoutFilter@6012bee8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6dd50380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fbf66e7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49f32bcb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@502dc93a, org.springframework.security.web.session.SessionManagementFilter@3ad5f99, org.springframework.security.web.access.ExceptionTranslationFilter@38447073, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5653429e]
+19:58:03.948 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@616fe72b: startup date [Mon Jun 17 19:57:55 CST 2019]; root of context hierarchy
+19:58:04.051 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/ || /index],methods=[GET]}" onto public java.lang.String findhome.controller.HomeController.index(org.springframework.ui.Model)
+19:58:04.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String findhome.controller.HomeController.accessError()
+19:58:04.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sms/code],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.HomeController.smsCode(java.lang.String)
+19:58:04.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404],methods=[GET]}" onto public java.lang.String findhome.controller.HomeController.notFoundPage()
+19:58:04.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500],methods=[GET]}" onto public java.lang.String findhome.controller.HomeController.internalError()
+19:58:04.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/logout/page],methods=[GET]}" onto public java.lang.String findhome.controller.HomeController.logoutPage()
+19:58:04.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user/{userId}],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.getUserInfo(java.lang.Long)
+19:58:04.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/center],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.center(org.springframework.ui.ModelMap)
+19:58:04.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.login()
+19:58:04.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/houses],methods=[POST]}" onto public findhome.base.ApiDataTableResponse findhome.controller.admin.AdminController.houses(findhome.web.form.DatatableSearch)
+19:58:04.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/welcome],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.welcome()
+19:58:04.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/list],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseListPage()
+19:58:04.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.addHousePage()
+19:58:04.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/upload/photo],methods=[POST],consumes=[multipart/form-data]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.uploadPhoto(org.springframework.web.multipart.MultipartFile)
+19:58:04.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/add/house],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:58:04.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseEditPage(java.lang.Long,org.springframework.ui.Model)
+19:58:04.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/edit],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.saveHouse(findhome.web.form.HouseForm,org.springframework.validation.BindingResult)
+19:58:04.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/photo],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHousePhoto(java.lang.Long)
+19:58:04.062 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/cover],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.updateCover(java.lang.Long,java.lang.Long)
+19:58:04.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.addHouseTag(java.lang.Long,java.lang.String)
+19:58:04.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/tag],methods=[DELETE]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.removeHouseTag(java.lang.Long,java.lang.String)
+19:58:04.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/operate/{id}/{operation}],methods=[PUT]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.operateHouse(java.lang.Long,int)
+19:58:04.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe],methods=[GET]}" onto public java.lang.String findhome.controller.admin.AdminController.houseSubscribe()
+19:58:04.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/house/subscribe/list],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.subscribeList(int,int,int)
+19:58:04.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/finish/subscribe],methods=[POST]}" onto public findhome.base.ApiResponse findhome.controller.admin.AdminController.finishSubscribe(java.lang.Long)
+19:58:04.072 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/cities],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportCities()
+19:58:04.072 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/regions],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportRegions(java.lang.String)
+19:58:04.073 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/line],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayLine(java.lang.String)
+19:58:04.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address/support/subway/station],methods=[GET]}" onto public findhome.base.ApiResponse findhome.controller.house.HouseController.getSupportSubwayStation(java.lang.Long)
+19:58:04.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rent/house],methods=[GET]}" onto public java.lang.String findhome.controller.house.HouseController.rentHousePage(findhome.web.form.RentSearch,org.springframework.ui.Model,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+19:58:04.075 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/center],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.centerPage()
+19:58:04.076 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String findhome.controller.user.UserController.loginPage()
+19:58:04.080 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+19:58:04.080 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+19:58:04.172 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:58:04.172 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:58:04.292 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19:58:05.509 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+19:58:05.521 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+19:58:05.526 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+19:58:05.575 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+19:58:05.597 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:58:05.609 [main] INFO  o.a.k.c.c.ConsumerConfig - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = xunwu
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+19:58:05.654 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka version : 0.10.1.1
+19:58:05.654 [main] INFO  o.a.k.c.u.AppInfoParser - Kafka commitId : f10ef2720b03b247
+19:58:05.661 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+19:58:05.674 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+19:58:05.688 [main] INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+19:58:05.700 [main] INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+19:58:05.709 [main] INFO  o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+19:58:05.726 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+19:58:05.733 [main] INFO  f.FindhomeApplication - Started FindhomeApplication in 10.688 seconds (JVM running for 11.845)
+19:58:44.601 [http-nio-7777-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+19:58:44.609 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+19:58:44.636 [http-nio-7777-exec-1] INFO  o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms

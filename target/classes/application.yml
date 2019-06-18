@@ -56,7 +56,7 @@ spring:
       min-idle: 1
     timeout: 5000
   session:
-    store-type: redis
+    store-type: hash_map   # redis
 
 elasticsearch.cluster.name: xunwu
 elasticsearch.host: 127.0.0.1
