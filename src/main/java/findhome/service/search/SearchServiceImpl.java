@@ -55,6 +55,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -98,7 +99,7 @@ public class SearchServiceImpl implements ISearchService {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @Autowired
+    @Resource
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @KafkaListener(topics = INDEX_TOPIC)
@@ -215,8 +216,98 @@ public class SearchServiceImpl implements ISearchService {
 
     @Override
     public void index(Long houseId) {
-        this.index(houseId, 0);
+        //原先代码
+        // this.index(houseId, 0);
+        House house = houseRepository.findOne(houseId);
+        logger.error(" index  house{} dose not exist" + houseId);
+        HouseIndexTemplate indexTemplate = new HouseIndexTemplate();
+        modelMapper.map(house, indexTemplate);
+
+        HouseDetail detail = houseDetailRepository.findByHouseId(houseId);
+        modelMapper.map(detail, indexTemplate);
+
+        List<HouseTag> tags = tagRepository.findAllByHouseId(houseId);
+        if (tags != null && tags.isEmpty()) {
+            List<String> tag = new ArrayList<>();
+            tags.forEach(htag -> {
+                tag.add(htag.getName());
+                indexTemplate.setTags(tag);
+            });
+        }
+
+        SearchRequestBuilder requestBuilder = this.esClient.prepareSearch(INDEX_NAME).setTypes(INDEX_TYPE)
+                .setQuery(QueryBuilders.termQuery(HouseIndexKey.HOUSE_ID, houseId));
+
+        logger.debug(requestBuilder.toString());
+        SearchResponse searchResponse = requestBuilder.get();
+
+        boolean success;
+        long totalHit = searchResponse.getHits().getTotalHits();
+        if (totalHit == 0) {
+            success = add(indexTemplate);
+        } else if (totalHit == 1) {
+            String esId = searchResponse.getHits().getAt(0).getId();
+            success = edit(esId, indexTemplate);
+        } else {
+            success = del(totalHit, indexTemplate);
+        }
+        if (success) {
+            logger.info("true");
+        }
+
     }
+
+    /*
+    跟着视频走
+     */
+    private boolean add(HouseIndexTemplate indexTemplate) {
+        try {
+            IndexResponse indexResponse = esClient.prepareIndex(INDEX_NAME, INDEX_TYPE).setSource(objectMapper.writeValueAsBytes(indexTemplate), XContentType.JSON).get();
+            logger.debug("Create index" + indexTemplate.getHouseId());
+            if (indexResponse.status() == RestStatus.CREATED) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private boolean edit(String esId, HouseIndexTemplate indexTemplate) {
+        try {
+            UpdateResponse updateResponse = esClient.prepareUpdate(INDEX_NAME, INDEX_TYPE, esId).setDoc(objectMapper.writeValueAsBytes(indexTemplate), XContentType.JSON).get();
+            logger.debug("update index" + indexTemplate.getHouseId());
+            if (updateResponse.status() == RestStatus.OK) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private boolean del(Long totalHit, HouseIndexTemplate indexTemplate) {
+        DeleteByQueryRequestBuilder builder = DeleteByQueryAction.INSTANCE
+                .newRequestBuilder(esClient)
+                .filter(QueryBuilders.termQuery(HouseIndexKey.HOUSE_ID, indexTemplate.getHouseId()))
+                .source(INDEX_NAME);
+        logger.debug("delete index" + builder);
+        BulkByScrollResponse response = builder.get();
+        long deleted = response.getDeleted();
+        if (deleted != totalHit) {
+            logger.warn(" index  number false" + builder);
+            return false;
+        } else {
+            return add(indexTemplate);
+        }
+
+
+    }
+
 
     private void index(Long houseId, int retry) {
         if (retry > HouseIndexMessage.MAX_RETRY) {
@@ -343,7 +434,7 @@ public class SearchServiceImpl implements ISearchService {
 
         if (rentSearch.getRentWay() > -1) {
             boolQuery.filter(
-                QueryBuilders.termQuery(HouseIndexKey.RENT_WAY, rentSearch.getRentWay())
+                    QueryBuilders.termQuery(HouseIndexKey.RENT_WAY, rentSearch.getRentWay())
             );
         }
 
@@ -384,8 +475,8 @@ public class SearchServiceImpl implements ISearchService {
 
         for (SearchHit hit : response.getHits()) {
             float score = hit.getScore();
-         //   System.out.println(hit.getSource());
-         //   houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
+            //   System.out.println(hit.getSource());
+            //   houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
         }
 
         return new ServiceMultiResult<>(response.getHits().totalHits, houseIds);
@@ -452,7 +543,7 @@ public class SearchServiceImpl implements ISearchService {
                 .setQuery(boolQuery)
                 .addAggregation(
                         AggregationBuilders.terms(HouseIndexKey.AGG_DISTRICT)
-                        .field(HouseIndexKey.DISTRICT)
+                                .field(HouseIndexKey.DISTRICT)
                 ).setSize(0);
 
         logger.debug(requestBuilder.toString());
@@ -522,7 +613,7 @@ public class SearchServiceImpl implements ISearchService {
         }
 
         for (SearchHit hit : response.getHits()) {
-           // houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
+            // houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
         }
         return new ServiceMultiResult<>(response.getHits().getTotalHits(), houseIds);
     }
@@ -533,11 +624,11 @@ public class SearchServiceImpl implements ISearchService {
         boolQuery.filter(QueryBuilders.termQuery(HouseIndexKey.CITY_EN_NAME, mapSearch.getCityEnName()));
 
         boolQuery.filter(
-            QueryBuilders.geoBoundingBoxQuery("location")
-                .setCorners(
-                        new GeoPoint(mapSearch.getLeftLatitude(), mapSearch.getLeftLongitude()),
-                        new GeoPoint(mapSearch.getRightLatitude(), mapSearch.getRightLongitude())
-                ));
+                QueryBuilders.geoBoundingBoxQuery("location")
+                        .setCorners(
+                                new GeoPoint(mapSearch.getLeftLatitude(), mapSearch.getLeftLongitude()),
+                                new GeoPoint(mapSearch.getRightLatitude(), mapSearch.getRightLongitude())
+                        ));
 
         SearchRequestBuilder builder = this.esClient.prepareSearch(INDEX_NAME)
                 .setTypes(INDEX_TYPE)
@@ -556,7 +647,7 @@ public class SearchServiceImpl implements ISearchService {
 
         for (SearchHit hit : response.getHits()) {
 
-          //  houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
+            //  houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
         }
         return new ServiceMultiResult<>(response.getHits().getTotalHits(), houseIds);
     }

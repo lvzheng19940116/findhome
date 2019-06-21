@@ -58,7 +58,7 @@ spring:
   session:
     store-type: hash_map   # redis
 
-elasticsearch.cluster.name: xunwu
+elasticsearch.cluster.name: lvzheng
 elasticsearch.host: 127.0.0.1
 elasticsearch.port: 9300
 #
