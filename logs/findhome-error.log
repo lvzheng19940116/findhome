@@ -1,10 +1,126 @@
-10:16:04.817 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:16:05.188 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:16:05.393 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:16:05.597 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:16:05.597 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 26 Please check it!
-10:42:14.835 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:42:15.043 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:42:15.330 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:42:15.749 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
-10:42:15.749 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 26 Please check it!
+19:53:30.251 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:30.528 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:31.144 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:31.144 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 24 Please check it!
+19:53:38.004 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:38.116 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:38.617 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:38.617 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 21 Please check it!
+19:53:42.816 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:43.123 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:43.533 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:43.533 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 20 Please check it!
+19:53:47.944 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:48.404 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:48.652 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:48.653 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 19 Please check it!
+19:53:52.418 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:52.646 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:52.971 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:52.971 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 18 Please check it!
+19:53:59.199 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:53:59.610 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:54:00.325 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:54:00.326 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 17 Please check it!
+19:54:04.429 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:54:04.733 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:54:05.244 [SimpleAsyncTaskExecutor-1] ERROR f.s.h.IAddressService - Error to delete lbs data for message: 指定POI不存在
+19:54:05.245 [SimpleAsyncTaskExecutor-1] ERROR f.s.s.ISearchService - Retry remove times over 3 for house: 16 Please check it!
+19:54:53.339 [http-nio-7777-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at findhome.service.house.HouseServiceImpl.query(HouseServiceImpl.java:368)
+	at findhome.service.house.HouseServiceImpl$$FastClassBySpringCGLIB$$44a8c652.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at findhome.service.house.HouseServiceImpl$$EnhancerBySpringCGLIB$$30c3daa.query(<generated>)
+	at findhome.controller.house.HouseController.rentHousePage(HouseController.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:167)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

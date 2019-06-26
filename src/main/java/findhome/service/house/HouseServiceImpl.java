@@ -149,9 +149,9 @@ public class HouseServiceImpl implements IHouseService {
         house.setLastUpdateTime(new Date());
         houseRepository.save(house);
 
-//        if (house.getStatus() == HouseStatus.PASSES.getValue()) {
-//            searchService.index(house.getId());
-//        }
+        if (house.getStatus() == HouseStatus.PASSES.getValue()) {
+            searchService.index(house.getId());
+        }
 
         return ServiceResult.success();
     }
@@ -332,9 +332,9 @@ public class HouseServiceImpl implements IHouseService {
 
         // 上架更新索引 其他情况都要删除索引
         if (status == HouseStatus.PASSES.getValue()) {
-             searchService.index(id);
+            searchService.index(id);
         } else {
-             searchService.remove(id);
+            searchService.remove(id);
         }
         return ServiceResult.success();
     }
@@ -349,7 +349,7 @@ public class HouseServiceImpl implements IHouseService {
             houseDTO.setCover(this.cdnPrefix + house.getCover());
             idToHouseMap.put(house.getId(), houseDTO);
         });
-
+        //渲染详细信息和标签
         wrapperHouseList(houseIds, idToHouseMap);
 
         // 矫正顺序
@@ -363,11 +363,12 @@ public class HouseServiceImpl implements IHouseService {
     public ServiceMultiResult<HouseDTO> query(RentSearch rentSearch) {
         if (rentSearch.getKeywords() != null && !rentSearch.getKeywords().isEmpty()) {
             ServiceMultiResult<Long> serviceResult = null;
-            //searchService.query(rentSearch);
+            serviceResult=searchService.query(rentSearch);
+            System.out.println("走es");
             if (serviceResult.getTotal() == 0) {
                 return new ServiceMultiResult<>(0, new ArrayList<>());
             }
-
+            //方法在下面 simpleQuery  在上面wrapperHouseResult
             return new ServiceMultiResult<>(serviceResult.getTotal(), wrapperHouseResult(serviceResult.getResult()));
         }
 
@@ -375,10 +376,47 @@ public class HouseServiceImpl implements IHouseService {
 
     }
 
+    private ServiceMultiResult<HouseDTO> simpleQuery(RentSearch rentSearch) {
+        Sort sort = HouseSort.generateSort(rentSearch.getOrderBy(), rentSearch.getOrderDirection());
+        int page = rentSearch.getStart() / rentSearch.getSize();
+
+        Pageable pageable = new PageRequest(page, rentSearch.getSize(), sort);
+
+        Specification<House> specification = (root, criteriaQuery, criteriaBuilder) -> {
+            Predicate predicate = criteriaBuilder.equal(root.get("status"), HouseStatus.PASSES.getValue());
+
+            predicate = criteriaBuilder.and(predicate, criteriaBuilder.equal(root.get("cityEnName"), rentSearch.getCityEnName()));
+
+            if (HouseSort.DISTANCE_TO_SUBWAY_KEY.equals(rentSearch.getOrderBy())) {
+                predicate = criteriaBuilder.and(predicate, criteriaBuilder.gt(root.get(HouseSort.DISTANCE_TO_SUBWAY_KEY), -1));
+            }
+            return predicate;
+        };
+
+        Page<House> houses = houseRepository.findAll(specification, pageable);
+        List<HouseDTO> houseDTOS = new ArrayList<>();
+
+
+        List<Long> houseIds = new ArrayList<>();
+        Map<Long, HouseDTO> idToHouseMap = Maps.newHashMap();
+        houses.forEach(house -> {
+            HouseDTO houseDTO = modelMapper.map(house, HouseDTO.class);
+            houseDTO.setCover(this.cdnPrefix + house.getCover());
+            houseDTOS.add(houseDTO);
+
+            houseIds.add(house.getId());
+            idToHouseMap.put(house.getId(), houseDTO);
+        });
+
+
+        wrapperHouseList(houseIds, idToHouseMap);
+        return new ServiceMultiResult<>(houses.getTotalElements(), houseDTOS);
+    }
+
     @Override
     public ServiceMultiResult<HouseDTO> wholeMapQuery(MapSearch mapSearch) {
         ServiceMultiResult<Long> serviceResult = null;
-        //searchService.mapQuery(mapSearch.getCityEnName(), mapSearch.getOrderBy(), mapSearch.getOrderDirection(), mapSearch.getStart(), mapSearch.getSize());
+        serviceResult=  searchService.mapQuery(mapSearch.getCityEnName(), mapSearch.getOrderBy(), mapSearch.getOrderDirection(), mapSearch.getStart(), mapSearch.getSize());
 
         if (serviceResult.getTotal() == 0) {
             return new ServiceMultiResult<>(0, new ArrayList<>());
@@ -390,7 +428,7 @@ public class HouseServiceImpl implements IHouseService {
     @Override
     public ServiceMultiResult<HouseDTO> boundMapQuery(MapSearch mapSearch) {
         ServiceMultiResult<Long> serviceResult = null;
-        //searchService.mapQuery(mapSearch);
+        serviceResult =  searchService.mapQuery(mapSearch);
         if (serviceResult.getTotal() == 0) {
             return new ServiceMultiResult<>(0, new ArrayList<>());
         }
@@ -525,42 +563,6 @@ public class HouseServiceImpl implements IHouseService {
         return new ServiceMultiResult<>(page.getTotalElements(), result);
     }
 
-    private ServiceMultiResult<HouseDTO> simpleQuery(RentSearch rentSearch) {
-        Sort sort = HouseSort.generateSort(rentSearch.getOrderBy(), rentSearch.getOrderDirection());
-        int page = rentSearch.getStart() / rentSearch.getSize();
-
-        Pageable pageable = new PageRequest(page, rentSearch.getSize(), sort);
-
-        Specification<House> specification = (root, criteriaQuery, criteriaBuilder) -> {
-            Predicate predicate = criteriaBuilder.equal(root.get("status"), HouseStatus.PASSES.getValue());
-
-            predicate = criteriaBuilder.and(predicate, criteriaBuilder.equal(root.get("cityEnName"), rentSearch.getCityEnName()));
-
-            if (HouseSort.DISTANCE_TO_SUBWAY_KEY.equals(rentSearch.getOrderBy())) {
-                predicate = criteriaBuilder.and(predicate, criteriaBuilder.gt(root.get(HouseSort.DISTANCE_TO_SUBWAY_KEY), -1));
-            }
-            return predicate;
-        };
-
-        Page<House> houses = houseRepository.findAll(specification, pageable);
-        List<HouseDTO> houseDTOS = new ArrayList<>();
-
-
-        List<Long> houseIds = new ArrayList<>();
-        Map<Long, HouseDTO> idToHouseMap = Maps.newHashMap();
-        houses.forEach(house -> {
-            HouseDTO houseDTO = modelMapper.map(house, HouseDTO.class);
-            houseDTO.setCover(this.cdnPrefix + house.getCover());
-            houseDTOS.add(houseDTO);
-
-            houseIds.add(house.getId());
-            idToHouseMap.put(house.getId(), houseDTO);
-        });
-
-
-        wrapperHouseList(houseIds, idToHouseMap);
-        return new ServiceMultiResult<>(houses.getTotalElements(), houseDTOS);
-    }
 
     /**
      * 渲染详细信息 及 标签

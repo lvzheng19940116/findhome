@@ -223,6 +223,7 @@ public class SearchServiceImpl implements ISearchService {
             this.remove(houseId, message.getRetry() + 1);
         }
     }
+
     public void remove(Long houseId, int retry) {
         if (retry > HouseIndexMessage.MAX_RETRY) {
             logger.error("Retry remove times over 3 for house: " + houseId + " Please check it!");
@@ -233,7 +234,7 @@ public class SearchServiceImpl implements ISearchService {
         try {
 //            this.kafkaTemplate.send(INDEX_TOPIC, objectMapper.writeValueAsString(message));
             this.rabbitTemplate.convertAndSend("haoxueyun", objectMapper.writeValueAsString(message));
-            System.out.println("移除消息————————————————————————————"+objectMapper.writeValueAsString(message));
+            System.out.println("移除消息————————————————————————————" + objectMapper.writeValueAsString(message));
         } catch (JsonProcessingException e) {
             logger.error("Cannot encode json for " + message, e);
         }
@@ -242,7 +243,7 @@ public class SearchServiceImpl implements ISearchService {
     @Override
     public void index(Long houseId) {
         //原先代码
-         this.index(houseId, 0);
+        this.index(houseId, 0);
         //测试代码
 //        House house = houseRepository.findOne(houseId);
 //        logger.error(" index  house{} dose not exist" + houseId);
@@ -282,6 +283,7 @@ public class SearchServiceImpl implements ISearchService {
 //        }
         //测试代码
     }
+
     public void index(Long houseId, int retry) {
         if (retry > HouseIndexMessage.MAX_RETRY) {
             logger.error("Retry index times over 3 for house: " + houseId + " Please check it!");
@@ -290,8 +292,8 @@ public class SearchServiceImpl implements ISearchService {
 
         HouseIndexMessage message = new HouseIndexMessage(houseId, HouseIndexMessage.INDEX, retry);
         try {
-            rabbitTemplate.convertAndSend("haoxueyun",objectMapper.writeValueAsString(message));
-            System.out.println("发布消息————————————————————————————"+objectMapper.writeValueAsString(message));
+            rabbitTemplate.convertAndSend("haoxueyun", objectMapper.writeValueAsString(message));
+            System.out.println("发布消息————————————————————————————" + objectMapper.writeValueAsString(message));
 //            kafkaTemplate.send(INDEX_TOPIC, objectMapper.writeValueAsString(message));
         } catch (JsonProcessingException e) {
             logger.error("Json encode error for " + message);
@@ -346,8 +348,6 @@ public class SearchServiceImpl implements ISearchService {
 //            return add(indexTemplate);
 //        }
 //    }
-
-
 
 
     private boolean create(HouseIndexTemplate indexTemplate) {
@@ -465,10 +465,10 @@ public class SearchServiceImpl implements ISearchService {
             );
         }
 
-//        boolQuery.must(
-//                QueryBuilders.matchQuery(HouseIndexKey.TITLE, rentSearch.getKeywords())
-//                        .boost(2.0f)
-//        );
+        boolQuery.must(
+                QueryBuilders.matchQuery(HouseIndexKey.TITLE, rentSearch.getKeywords())
+                        .boost(2.0f)
+        );
 
         boolQuery.must(
                 QueryBuilders.multiMatchQuery(rentSearch.getKeywords(),
@@ -479,7 +479,7 @@ public class SearchServiceImpl implements ISearchService {
                         HouseIndexKey.SUBWAY_LINE_NAME,
                         HouseIndexKey.SUBWAY_STATION_NAME
                 ));
-
+        //构建es查询
         SearchRequestBuilder requestBuilder = this.esClient.prepareSearch(INDEX_NAME)
                 .setTypes(INDEX_TYPE)
                 .setQuery(boolQuery)
@@ -502,8 +502,9 @@ public class SearchServiceImpl implements ISearchService {
 
         for (SearchHit hit : response.getHits()) {
             float score = hit.getScore();
-            //   System.out.println(hit.getSource());
-            //   houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
+            System.out.println(hit.getSource());
+            //转成Long
+            houseIds.add(Longs.tryParse(String.valueOf(hit.getSource().get(HouseIndexKey.HOUSE_ID))));
         }
 
         return new ServiceMultiResult<>(response.getHits().totalHits, houseIds);
@@ -715,7 +716,6 @@ public class SearchServiceImpl implements ISearchService {
         indexTemplate.setSuggest(suggests);
         return true;
     }
-
 
 
 }
