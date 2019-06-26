@@ -49,6 +49,9 @@ spring:
     port: 5672
     host: 127.0.0.1
     username: guest
+    listener:
+      simple:
+        default-requeue-rejected: false
   redis:
     host: 127.0.0.1
     port: 6379

@@ -332,9 +332,9 @@ public class HouseServiceImpl implements IHouseService {
 
         // 上架更新索引 其他情况都要删除索引
         if (status == HouseStatus.PASSES.getValue()) {
-            // searchService.index(id);
+             searchService.index(id);
         } else {
-            // searchService.remove(id);
+             searchService.remove(id);
         }
         return ServiceResult.success();
     }

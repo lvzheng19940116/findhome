@@ -49,6 +49,10 @@ spring:
     port: 5672
     host: 127.0.0.1
     username: guest
+   #设置requeue-rejected为false来丢弃消息
+    listener:
+      simple:
+        default-requeue-rejected: false
   redis:
     host: 127.0.0.1
     port: 6379
